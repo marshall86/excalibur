@@ -1,11 +1,11 @@
 {
   "project": {
-    "version": "1.0.0-beta.21",
-    "name": "test-app"
+    "version":  "1.0.0-beta.21",
+    "name":     "xcaliber-assessment-app"
   },
   "apps": [
     {
-      "root": "src",
+      "root":   "src",
       "outDir": "dist",
       "assets": [
         "assets",
@@ -23,8 +23,8 @@
       "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "dev":    "environments/environment.ts",
+        "prod":   "environments/environment.prod.ts"
       }
     }
   ],

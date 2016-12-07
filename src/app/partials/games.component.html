@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>{{title}}</h1>
+    </div>
+
+    <div class="clear" *ngIf="games">
+        <input type="text" [(ngModel)]="query" placeholder="search" >
+
+        <div id="{{game.id}}" *ngFor="let game of games; trackBy: trackByFn | filterGame: query: game">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 margin">
+                <a href="/games/{{game.id}}">
+                    <div class="game-box">
+                        <img src="{{game.thumbnail}}" class="align-center img-responsive">
+                        <div class="game-title">
+                            <span class="glyphicon glyphicon-star"> {{game.name}}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
